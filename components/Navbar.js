@@ -1,27 +1,27 @@
-import React from "react";
+import React, {useState} from "react";
 import Pdf from '../resources/YutaHagiwara_Resume_Portfolio.pdf';
 import MenuIcon from '@material-ui/icons/Menu';
 
 
 const Navbar = () => {
 
-    const toggleBtn = document.getElementsByClassName('toggle-btn')[0]
-    const navbarLinks = document.getElementsByClassName('nav-items')[0]
+    const [isActive, setIsActive] = useState(false);
 
-    const toggleActive = () => {
-        navbarLinks.classList.toggle('active');
-        console.log(navbarLinks)
+    const toggleHandler = () => {
+        setIsActive(!isActive)
+        console.log(isActive)
     }
+
 
     return (<div className="nav-container">
                 <div className="nav-title">Yuta Hagiwara</div>
                 <a href="#" className="toggle-btn">
-                    <MenuIcon className="bar" 
+                    <MenuIcon 
                               style={{fontSize:"40px"}}
-                              onClick={toggleActive}
+                              onClick={toggleHandler}
                               />
                 </a>
-                <div className="nav-items">
+                <div className={isActive ? "nav-items-toggle" : "nav-items"}>
                     <ul id="nav">
                         <li><a href="#about"><b>Home</b></a></li>
                         <li><a href="#experiences">Experience</a></li>
