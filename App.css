@@ -415,7 +415,7 @@
   .nav-title{
     font-size: 1.8rem;
     font-weight: bold;
-    color:#FFFF;
+    opacity: 0;
     margin-left:0.5rem;
     padding: 10px;
   }
@@ -689,7 +689,7 @@
     height:35px;
     background-color: #1b67b9;
     border:none;
-    margin: 0 auto 5px auto;
+    margin: 0 2px 5px 2px;
     border-radius: 5px;
     padding:5px;
   }
@@ -747,8 +747,8 @@
   }
   
   .form-input{
-    width:80%;
-    height: 40px;
+    width:60%;
+    height: 30px;
     margin-top: 10px;
     font-size: 1rem;
     font-weight: bold;
@@ -756,8 +756,8 @@
   }
   
   .form-textarea{
-    width:80%;
-    height: 200px;
+    width:60%;
+    height: 180px;
     margin-top: 10px;
     font-size: 1rem;
     font-weight: bold;
@@ -1060,7 +1060,7 @@
     height:35px;
     background-color: #1b67b9;
     border:none;
-    margin: 0 auto 5px auto;
+    margin: 0 2px 5px 2px;
     border-radius: 5px;
     padding:5px;
   }

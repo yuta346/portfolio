@@ -20,7 +20,7 @@ const TopPage = () => {
                         <div className="icons">
                             <GitHubIcon style={{fontSize: '40px', marginTop:"2px", color:"#0F5298"}} onClick={e =>  window.open('https://github.com/yuta346')}/>
                             <LinkedInIcon style={{fontSize: '50px', color:"#0F5298"}} onClick={e =>  window.open('https://www.linkedin.com/in/yuta-hagiwara/')}/>
-                            <EmailIcon style={{fontSize: '50px', color:"#0F5298"}}/>
+                            <a href="mailto:hagiwara.y@outlook.com" target="_top"><EmailIcon style={{fontSize: '50px', color:"#0F5298"}}/></a>
                         </div>
                     </div>
                     <div class="about-right">
